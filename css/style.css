@@ -1,105 +1,303 @@
 * {
-
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 body {
-
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: rgb(255, 190, 233);
-
+    color: black;
 }
 
 
-
+/* =========================
+   CABEÇALHO
+========================= */
 
 header {
-
     background-color: rgb(252, 134, 203);
     color: rgb(197, 22, 109);
-    font-family: Georgia, serif;
-    font-weight: bold;
-    padding: 25px 35px;
-    margin-bottom: 20px;
+
+    padding: 15px 75px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    min-height: 70px;
 }
 
+header section:first-child {
+    display: flex;
+    flex-direction: column;
+}
 
 header small {
-
-    color: rgb(220, 20, 120);
+    color: rgb(197, 22, 109);
     font-size: 10px;
     font-weight: bold;
-
 }
-
 
 h1 {
-
     font-family: Georgia, serif;
     color: rgb(197, 22, 109);
-    text-align: left;
     font-size: 32px;
     margin-top: 5px;
-    margin-bottom: 0;
-
 }
+
+
+/* MENU */
+
+header section:last-child {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+header a {
+    background-color: rgb(255, 220, 243);
+    color: rgb(150, 0, 80);
+
+    text-decoration: none;
+
+    padding: 11px 14px;
+
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+header a:hover {
+    background-color: rgb(255, 190, 233);
+}
+
+
+/* =========================
+   CONTEÚDO PRINCIPAL
+========================= */
 
 main {
-
     background-color: rgb(253, 228, 245);
-    padding: 30px 35px;
-
-}
-
-#menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: nowrap;
-    gap: 16px;
-    border-radius: 20%;
+    padding: 40px 25px 0;
 }
 
 
+/* =========================
+   INTRODUÇÃO
+========================= */
 
 #introducao {
+    background-color: rgb(249, 181, 224);
+
     display: flex;
-    flex-direction: row;
-    gap: 30px;
-    padding: 20px;
-    background-color: rgb(255, 190, 233);
-    align-items: center;
     justify-content: space-between;
-    margin-top: 0px;
+    align-items: center;
+
+    padding: 30px 65px;
+
+    min-height: 300px;
 }
+
+#introducao article {
+    width: 58%;
+}
+
+#introducao small {
+    color: rgb(40, 0, 25);
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#introducao h2 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+
+    color: rgb(197, 22, 109);
+
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#introducao p {
+    color: rgb(117, 13, 65);
+
+    font-family: Georgia, serif;
+    font-size: 16px;
+
+    margin-bottom: 8px;
+}
+
+#introducao strong {
+    color: rgb(197, 22, 109);
+}
+
+#introducao a {
+    display: inline-block;
+
+    margin-top: 5px;
+
+    color: rgb(197, 22, 109);
+
+    font-weight: bold;
+}
+
+
+/* IMAGEM */
 
 #introducao img {
+    width: 420px;
+    height: 240px;
 
-    width: 450px;
-    height: 250px;
-
+    object-fit: cover;
 }
 
-#introducao p{
 
-    color: rgb(117, 13, 65);
-    font-size: 16px;
+/* =========================
+   DESTAQUES
+========================= */
+
+#destaques {
+    padding: 30px 5px 25px;
+}
+
+#destaques > small {
+    color: rgb(197, 22, 109);
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#destaques > h2 {
     font-family: Georgia, serif;
 
+    font-size: 22px;
+
+    color: black;
+
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
-#filmes > small {
 
-    color: rgb(220, 20, 120);
-    font-size: 10px;
+/* =========================
+   CARDS
+========================= */
+
+#cards {
+    display: flex;
+
+    gap: 15px;
+
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+
+    width: 33%;
+
+    min-height: 120px;
+
+    padding: 20px;
+
+    border-radius: 18px;
+}
+
+.card h3 {
+    font-family: Georgia, serif;
+
+    font-size: 17px;
+
+    color: black;
+
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: rgb(197, 22, 109);
+
+    font-family: Georgia, serif;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+#final {
+    padding: 5px 5px 30px;
+}
+
+#final small {
+    color: rgb(197, 22, 109);
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+#final h2 {
+    font-family: Georgia, serif;
+
+    font-size: 22px;
+
+    color: black;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#final a {
+    color: rgb(197, 22, 109);
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background-color: rgb(197, 22, 109);
+
+    color: white;
+
+    min-height: 65px;
+
+    padding: 20px 75px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+footer p {
+    font-size: 11px;
+
     font-weight: bold;
 
+    white-space: nowrap;
+}
+
+footer a {
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+footer a:hover {
+    color: rgb(255, 220, 243);
 }
