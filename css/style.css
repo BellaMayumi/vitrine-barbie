@@ -7,25 +7,21 @@
 body {
     font-family: Arial, sans-serif;
     background-color: rgb(255, 190, 233);
-    color: black;
 }
 
+    /* CABEÇALHO */
 
-/* =========================
-   CABEÇALHO
-========================= */
-
-header {
+    header {
     background-color: rgb(252, 134, 203);
     color: rgb(197, 22, 109);
-
-    padding: 15px 75px;
-
+    font-family: Georgia, serif;
+    font-weight: bold;
+    padding: 25px 35px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    min-height: 70px;
+    min-height: 75px;
 }
 
 header section:first-child {
@@ -34,7 +30,7 @@ header section:first-child {
 }
 
 header small {
-    color: rgb(197, 22, 109);
+    color: rgb(100, 5, 64);
     font-size: 10px;
     font-weight: bold;
 }
@@ -42,8 +38,10 @@ header small {
 h1 {
     font-family: Georgia, serif;
     color: rgb(197, 22, 109);
+    text-align: left;
     font-size: 32px;
     margin-top: 5px;
+    margin-bottom: 0;
 }
 
 
@@ -58,11 +56,8 @@ header section:last-child {
 header a {
     background-color: rgb(255, 220, 243);
     color: rgb(150, 0, 80);
-
     text-decoration: none;
-
     padding: 11px 14px;
-
     font-family: Georgia, serif;
     font-weight: bold;
 }
@@ -72,30 +67,22 @@ header a:hover {
 }
 
 
-/* =========================
-   CONTEÚDO PRINCIPAL
-========================= */
+/* CONTEÚDO PRINCIPAL */
 
 main {
     background-color: rgb(253, 228, 245);
     padding: 40px 25px 0;
 }
 
-
-/* =========================
-   INTRODUÇÃO
-========================= */
+/* INTRODUÇÃO */
 
 #introducao {
     background-color: rgb(249, 181, 224);
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 30px 65px;
-
-    min-height: 300px;
+    min-height: 320px;
 }
 
 #introducao article {
@@ -103,7 +90,7 @@ main {
 }
 
 #introducao small {
-    color: rgb(40, 0, 25);
+    color: rgb(100, 5, 64);
     font-size: 11px;
     font-weight: bold;
 }
@@ -111,19 +98,15 @@ main {
 #introducao h2 {
     font-family: Georgia, serif;
     font-size: 34px;
-
     color: rgb(197, 22, 109);
-
     margin-top: 10px;
     margin-bottom: 15px;
 }
 
 #introducao p {
     color: rgb(117, 13, 65);
-
     font-family: Georgia, serif;
     font-size: 16px;
-
     margin-bottom: 8px;
 }
 
@@ -133,11 +116,8 @@ main {
 
 #introducao a {
     display: inline-block;
-
     margin-top: 5px;
-
     color: rgb(197, 22, 109);
-
     font-weight: bold;
 }
 
@@ -147,154 +127,107 @@ main {
 #introducao img {
     width: 420px;
     height: 240px;
-
     object-fit: cover;
 }
 
-
-/* =========================
-   DESTAQUES
-========================= */
+/* DESTAQUES */
 
 #destaques {
     padding: 30px 5px 25px;
 }
 
 #destaques > small {
-    color: rgb(197, 22, 109);
-
+    color: rgb(100, 5, 64);
     font-size: 11px;
     font-weight: bold;
 }
 
 #destaques > h2 {
     font-family: Georgia, serif;
-
     font-size: 22px;
-
-    color: black;
-
+    color: rgb(40, 0, 25);
     margin-top: 5px;
     margin-bottom: 20px;
 }
 
-
-/* =========================
-   CARDS
-========================= */
+/* CARDS */
 
 #cards {
     display: flex;
-
     gap: 15px;
-
     justify-content: center;
 }
 
 .card {
     background-color: white;
-
     width: 33%;
-
-    min-height: 120px;
-
+    min-height: 150px;
     padding: 20px;
-
     border-radius: 18px;
 }
 
 .card h3 {
     font-family: Georgia, serif;
-
     font-size: 17px;
-
-    color: black;
-
+    color: rgb(40, 0, 25);
     margin-bottom: 10px;
 }
 
 .card p {
     color: rgb(197, 22, 109);
-
     font-family: Georgia, serif;
-
     font-size: 15px;
-
     font-weight: bold;
 }
 
-
-/* =========================
-   FINAL
-========================= */
+/* FINAL */
 
 #final {
     padding: 5px 5px 30px;
 }
 
 #final small {
-    color: rgb(197, 22, 109);
-
+    color: rgb(100, 5, 64);
     font-size: 11px;
-
     font-weight: bold;
 }
 
 #final h2 {
     font-family: Georgia, serif;
-
     font-size: 22px;
-
-    color: black;
-
+    color: rgb(40, 0, 25);
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
 #final a {
     color: rgb(197, 22, 109);
-
     font-weight: bold;
 }
 
-
-/* =========================
-   RODAPÉ
-========================= */
+/* RODAPÉ */
 
 footer {
     background-color: rgb(197, 22, 109);
-
     color: white;
-
-    min-height: 65px;
-
+    min-height: 100px;
     padding: 20px 75px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     gap: 20px;
 }
 
 footer p {
     font-size: 11px;
-
     font-weight: bold;
-
     white-space: nowrap;
 }
 
 footer a {
     color: white;
-
     font-size: 13px;
-
     font-weight: bold;
-
     white-space: nowrap;
 }
 
